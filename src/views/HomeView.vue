@@ -1,18 +1,24 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <ul class="list-group">
+    <li class="list-group-item active">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+  </ul>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+// import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
   name: "HomeView",
-  components: {
-    HelloWorld,
-  },
+  components: {},
 };
 </script>
+
+<style scoped>
+.list-group {
+  width: 20rem;
+}
+</style>
